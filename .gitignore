@@ -1,0 +1,7 @@
+target
+.classpath
+.project
+.settings
+/**/generated-sources
+release.properties
+pom.xml.releaseBackup
