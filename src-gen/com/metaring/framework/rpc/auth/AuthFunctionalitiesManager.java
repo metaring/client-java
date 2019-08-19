@@ -11,9 +11,9 @@ import com.metaring.framework.rpc.RpcResponse;
 
 public class AuthFunctionalitiesManager extends FunctionalitiesManager implements GeneratedFunctionalitiesManager {
 
-    public static final FunctionalityInfo CALL_RESTRICTED = FunctionalityInfo.create("com.metaring.framework.rpc.auth.callRestricted", true, true, false, "com.metaring.framework.rpc.RpcRequest", "com.metaring.framework.rpc.RpcResponse");
+    public static final FunctionalityInfo CALL_RESTRICTED = CallRestrictedFunctionality.INFO;
 
-    public static final FunctionalityInfo CALL_RESERVED = FunctionalityInfo.create("com.metaring.framework.rpc.auth.callReserved", true, false, false, "com.metaring.framework.rpc.RpcRequest", "com.metaring.framework.rpc.RpcResponse");
+    public static final FunctionalityInfo CALL_RESERVED = CallReservedFunctionality.INFO;
 
     public static final CompletableFuture<RpcResponse> callRestricted(RpcRequest rpcRequest) {
         return call(CALL_RESTRICTED, CallRestrictedFunctionality.class, getCallingFunctionality(), rpcRequest, result -> result.as(RpcResponse.class));
