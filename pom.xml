@@ -19,7 +19,7 @@
 
     <groupId>com.metaring</groupId>
     <artifactId>platform-client</artifactId>
-    <version>1.5.2-SNAPSHOT</version>
+    <version>1.5.3-SNAPSHOT</version>
 
     <name>MetaRing Platform Client</name>
     <description>Client Utilities Library for the MetaRing Platform</description>
@@ -50,7 +50,7 @@
         <dependency>
             <groupId>com.metaring</groupId>
             <artifactId>framework-java-functionality</artifactId>
-            <version>1.5.1</version>
+            <version>1.5.2</version>
         </dependency>
         <dependency>
             <groupId>org.java-websocket</groupId>
